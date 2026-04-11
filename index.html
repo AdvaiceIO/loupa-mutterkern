@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUTTERKERN – 30-Tage Abend-Routine-Challenge</title>
+    <link rel="icon" href="https://loupaai.lovable.app/loupa-favicon.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E2D7C9',
+                        secondary: '#856A47',
+                        heading: '#864E41',
+                        body: '#F7F3EF',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @font-face {
+            font-family: 'Almine Bold';
+            src: local('Playfair Display');
+            font-weight: 700;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', 'Almine Bold', serif;
+            font-weight: 700;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            background-color: #FFFFFF;
+        }
+        .accordion-content {
+            overflow: hidden;
+            transition: max-height 400ms ease;
+        }
+        .nested-accordion-content {
+            overflow: hidden;
+            transition: max-height 300ms ease;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- ============================================ -->
+    <!-- SECTION 1: Product Features -->
+    <!-- ============================================ -->
+    <section class="bg-white py-16 md:py-24 px-6 md:px-8">
+        <div class="max-w-6xl mx-auto">
+            <!-- Header Area -->
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6" style="color: #864E41;">Deine Abende verdienen Ruhe.</h2>
+                <p class="text-lg max-w-2xl mx-auto" style="color: #856A47; font-weight: 400;">Entdecke die bewährte 20-Minuten-Abendroutine, die erschöpften Mamas hilft, endlich runterzukommen, besser zu schlafen und mit neuer Energie aufzuwachen.</p>
+            </div>
+
+            <!-- Two-Column Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <!-- Left Column: Product Image -->
+                <div class="flex justify-center">
+                    <img src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/mutterkern/product-features-image_1775933581664.png" alt="MUTTERKERN Challenge Book" class="max-w-md w-full drop-shadow-lg rounded-2xl">
+                </div>
+
+                <!-- Right Column: Features Card -->
+                <div class="rounded-2xl p-6 md:p-10" style="background-color: #F7F3EF; border: 1px solid #E2D7C9;">
+                    <div class="space-y-6 md:space-y-10">
+                        <!-- Feature 1 -->
+                        <div>
+                            <div class="flex items-center">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#856A47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                <h3 class="text-lg font-bold ml-3" style="color: #864E41;">Praxiserprobt & realistisch</h3>
+                            </div>
+                            <p class="text-base leading-relaxed mt-2" style="color: #856A47;">Keine unrealistischen 2-Stunden-Routinen. Nur 20 Minuten am Abend – entwickelt von und für Mamas, die wissen, dass perfekte Abende nicht existieren.</p>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div>
+                            <div class="flex items-center">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#856A47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                                <h3 class="text-lg font-bold ml-3" style="color: #864E41;">Besserer Schlaf ab Woche 1</h3>
+                            </div>
+                            <p class="text-base leading-relaxed mt-2" style="color: #856A47;">Die geführten Abend-Rituale helfen deinem Nervensystem, endlich runterzufahren – damit du schneller einschläfst und erholter aufwachst.</p>
+                        </div>
+
+                        <!-- Feature 3 -->
+                        <div>
+                            <div class="flex items-center">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#856A47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                                    <line x1="9" y1="9" x2="9.01" y2="9"/>
+                                    <line x1="15" y1="9" x2="15.01" y2="9"/>
+                                </svg>
+                                <h3 class="text-lg font-bold ml-3" style="color: #864E41;">30 Tage geführtes Tracking</h3>
+                            </div>
+                            <p class="text-base leading-relaxed mt-2" style="color: #856A47;">Jeden Tag eine klare, einfache Aufgabe mit Tracking-Seiten. Du siehst deinen Fortschritt und bleibst motiviert – auch an chaotischen Tagen.</p>
+                        </div>
+
+                        <!-- Feature 4 -->
+                        <div>
+                            <div class="flex items-center">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#856A47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="23 4 23 10 17 10"/>
+                                    <polyline points="1 20 1 14 7 14"/>
+                                    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+                                </svg>
+                                <h3 class="text-lg font-bold ml-3" style="color: #864E41;">Langfristige Gewohnheit</h3>
+                            </div>
+                            <p class="text-base leading-relaxed mt-2" style="color: #856A47;">Nach 30 Tagen hast du eine stabile Abendroutine aufgebaut, die dir Energie, bessere Nerven und echte Erholung schenkt – dauerhaft.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 2: Statistics / Social Proof -->
+    <!-- ============================================ -->
+    <section class="py-10 md:py-16 px-5 md:px-10" style="background-color: #856A47;">
+        <div class="max-w-[1400px] mx-auto">
+            <!-- Section Label -->
+            <p class="uppercase tracking-[3px] text-[13px] font-semibold mb-10" style="color: #F7F3EF;">Der Unterschied</p>
+
+            <!-- Statistics Row -->
+            <div class="hidden md:flex items-center justify-between">
+                <!-- Stat 1 -->
+                <div class="flex items-center gap-6">
+                    <span class="stat-number text-[44px] lg:text-[56px] font-bold leading-none" style="color: #F7F3EF; font-family: 'Playfair Display', Georgia, serif;" data-target="94" aria-label="94%">0<span>%</span></span>
+                    <p class="text-base leading-relaxed max-w-[220px]" style="color: #F7F3EF;">schlafen schon in der ersten Woche spürbar besser ein.</p>
+                </div>
+
+                <!-- Divider -->
+                <div class="h-[80px] w-px mx-6 lg:mx-10" style="background-color: #E2D7C9;"></div>
+
+                <!-- Stat 2 -->
+                <div class="flex items-center gap-6">
+                    <span class="stat-number text-[44px] lg:text-[56px] font-bold leading-none" style="color: #F7F3EF; font-family: 'Playfair Display', Georgia, serif;" data-target="89" aria-label="89%">0<span>%</span></span>
+                    <p class="text-base leading-relaxed max-w-[220px]" style="color: #F7F3EF;">fühlen sich morgens weniger erschöpft und ausgelaugt.</p>
+                </div>
+
+                <!-- Divider -->
+                <div class="h-[80px] w-px mx-6 lg:mx-10" style="background-color: #E2D7C9;"></div>
+
+                <!-- Stat 3 -->
+                <div class="flex items-center gap-6">
+                    <span class="stat-number text-[44px] lg:text-[56px] font-bold leading-none" style="color: #F7F3EF; font-family: 'Playfair Display', Georgia, serif;" data-target="96" aria-label="96%">0<span>%</span></span>
+                    <p class="text-base leading-relaxed max-w-[220px]" style="color: #F7F3EF;">würden MUTTERKERN anderen Mamas weiterempfehlen.</p>
+                </div>
+            </div>
+
+            <!-- Mobile Stats -->
+            <div class="md:hidden space-y-6">
+                <div class="flex items-center gap-5">
+                    <span class="stat-number text-[36px] font-bold leading-none" style="color: #F7F3EF; font-family: 'Playfair Display', Georgia, serif;" data-target="94" aria-label="94%">0<span>%</span></span>
+                    <p class="text-[15px] leading-relaxed" style="color: #F7F3EF;">schlafen schon in der ersten Woche spürbar besser ein.</p>
+                </div>
+                <div class="w-4/5 h-px" style="background-color: #E2D7C9;"></div>
+                <div class="flex items-center gap-5">
+                    <span class="stat-number text-[36px] font-bold leading-none" style="color: #F7F3EF; font-family: 'Playfair Display', Georgia, serif;" data-target="89" aria-label="89%">0<span>%</span></span>
+                    <p class="text-[15px] leading-relaxed" style="color: #F7F3EF;">fühlen sich morgens weniger erschöpft und ausgelaugt.</p>
+                </div>
+                <div class="w-4/5 h-px" style="background-color: #E2D7C9;"></div>
+                <div class="flex items-center gap-5">
+                    <span class="stat-number text-[36px] font-bold leading-none" style="color: #F7F3EF; font-family: 'Playfair Display', Georgia, serif;" data-target="96" aria-label="96%">0<span>%</span></span>
+                    <p class="text-[15px] leading-relaxed" style="color: #F7F3EF;">würden MUTTERKERN anderen Mamas weiterempfehlen.</p>
+                </div>
+            </div>
+
+            <!-- Footnote -->
+            <p class="text-[13px] mt-10" style="color: #E2D7C9;">*Basierend auf einer Umfrage unter 500+ Mamas, die die Challenge abgeschlossen haben.</p>
+        </div>
+    </section>
+
+    <script>
+    (function() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const numbers = entry.target.querySelectorAll('.stat-number');
+                    numbers.forEach(num => {
+                        const target = parseInt(num.getAttribute('data-target'));
+                        const suffix = num.querySelector('span') ? num.querySelector('span').textContent : '';
+                        const duration = 2000;
+                        const start = performance.now();
+                        function animate(currentTime) {
+                            const elapsed = currentTime - start;
+                            const progress = Math.min(elapsed / duration, 1);
+                            const eased = 1 - Math.pow(1 - progress, 3);
+                            const current = Math.floor(eased * target);
+                            num.textContent = current;
+                            const suffixSpan = document.createElement('span');
+                            suffixSpan.textContent = suffix;
+                            num.appendChild(suffixSpan);
+                            if (progress < 1) {
+                                requestAnimationFrame(animate);
+                            }
+                        }
+                        requestAnimationFrame(animate);
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        document.querySelectorAll('section')[1] && observer.observe(document.querySelectorAll('section')[1]);
+    })();
+    </script>
+
+    <!-- ============================================ -->
+    <!-- SECTION 3: Featured Product -->
+    <!-- ============================================ -->
+    <section class="bg-white py-10 md:py-16 px-5 md:px-8">
+        <div class="max-w-[1100px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <!-- Left Column: Product Image -->
+                <div class="flex items-center justify-center">
+                    <div class="w-full max-w-[630px] aspect-square">
+                        <img src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/mutterkern/featured-product-image_1775933581664.png" alt="MUTTERKERN Challenge Book" class="w-full h-full object-cover rounded-xl">
+                    </div>
+                </div>
+
+                <!-- Right Column: Product Details -->
+                <div>
+                    <!-- Rating Badge -->
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full" style="background-color: #F7F3EF;">
+                        <div class="flex gap-0.5">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#856A47"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#856A47"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#856A47"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#856A47"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#856A47"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <span class="text-sm" style="color: #856A47;">4.9/5 von 537 Mamas bewertet</span>
+                    </div>
+
+                    <!-- Product Title -->
+                    <h2 class="text-[28px] md:text-[32px] font-bold mt-3" style="color: #864E41;">MUTTERKERN – 30-Tage Abend-Routine-Challenge</h2>
+
+                    <!-- Price Row -->
+                    <div class="mt-2 flex items-baseline gap-2">
+                        <span class="text-[22px] font-bold" style="color: #864E41;">€14,99</span>
+                        <span class="text-base" style="color: #856A47;">(war <span class="line-through">€19,99</span>)</span>
+                    </div>
+
+                    <!-- Feature Checklist -->
+                    <div class="mt-5 space-y-3">
+                        <div class="flex items-center gap-3">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#856A47" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span class="text-base" style="color: #856A47;">20-Minuten-Routine – auch an chaotischen Tagen machbar</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#856A47" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span class="text-base" style="color: #856A47;">30 Tage geführt mit Tracking & Reflexion</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#856A47" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span class="text-base" style="color: #856A47;">Besserer Schlaf, mehr Energie, stärkere Nerven</span>
+                        </div>
+                    </div>
+
+                    <!-- Shipping/Delivery Info Bar -->
+                    <div class="mt-5 rounded-lg px-4 py-3 flex items-center gap-2 flex-wrap" style="background-color: #F7F3EF; border: 1px solid #E2D7C9;">
+                        <span class="w-2 h-2 rounded-full inline-block" style="background-color: #22C55E;"></span>
+                        <span class="text-[15px]" style="color: #856A47;">Sofort verfügbar</span>
+                        <span class="text-[15px]" style="color: #856A47;">•</span>
+                        <span class="text-[15px]" style="color: #856A47;">📧</span>
+                        <span class="text-[15px] font-bold" style="color: #856A47;">Digitaler Download</span>
+                    </div>
+
+                    <!-- Buy Now Button -->
+                    <a href="https://mutterkern.tentary.com/p/challengebook" class="block w-full text-center text-lg font-semibold py-4 rounded-lg mt-4 transition-all duration-200 hover:opacity-90" style="background-color: #864E41; color: #F7F3EF;">
+                        Jetzt kaufen
+                    </a>
+
+                    <!-- Trust Badges -->
+                    <div class="mt-4 flex items-center justify-center gap-6 flex-wrap">
+                        <div class="flex items-center gap-2">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#856A47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                            <span class="text-[13px] font-bold" style="color: #856A47;">+500 glückliche Mamas</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#856A47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            <span class="text-[13px] font-bold" style="color: #856A47;">Sicherer Checkout</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card -->
+                    <div class="mt-4 rounded-xl p-4 flex gap-4 items-start" style="background-color: #F7F3EF;">
+                        <img src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/mutterkern/reviewer-avatar-1_1775933581664.png" alt="Sarah M." class="w-[50px] h-[50px] rounded-full object-cover flex-shrink-0">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="font-bold text-base" style="color: #864E41;">Sarah M.</span>
+                                <div class="flex gap-0.5">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#856A47"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#856A47"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#856A47"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#856A47"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#856A47"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </div>
+                            </div>
+                            <p class="text-sm" style="color: #856A47;">„Endlich schlafe ich wieder ein, ohne stundenlang wach zu liegen. Die Challenge hat mir gezeigt, dass 20 Minuten am Abend reichen, um komplett runterzukommen."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 4: Before & After -->
+    <!-- ============================================ -->
+    <section class="pt-12 md:pt-20 pb-16 md:pb-28 px-5 md:px-16" style="background-color: #F7F3EF;">
+        <div class="max-w-[1400px] mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+            <!-- Left Column: Overlapping Images -->
+            <div class="w-full lg:w-[45%] flex justify-center">
+                <div class="relative" style="min-height: 340px; width: 100%; max-width: 520px;">
+                    <!-- Before Image -->
+                    <div class="relative z-[1]" style="transform: rotate(-5deg); width: 55%; max-width: 280px;">
+                        <!-- "von hier" label -->
+                        <span class="absolute -top-8 right-0 z-[10] text-lg md:text-2xl italic" style="color: #864E41; font-family: 'Playfair Display', serif;">von hier…</span>
+                        <!-- Curved Arrow -->
+                        <svg class="absolute -top-3 right-16 z-[10]" width="40" height="30" viewBox="0 0 40 30" fill="none">
+                            <path d="M35 2 C25 0, 15 8, 12 25" stroke="#864E41" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            <path d="M8 20 L12 26 L16 21" stroke="#864E41" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <img src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/mutterkern/before-image_1775933581664.png" alt="Vorher: Erschöpfte Mama" class="w-full rounded-2xl shadow-lg object-cover aspect-[3/4]">
+                    </div>
+
+                    <!-- After Image -->
+                    <div class="absolute z-[2]" style="transform: rotate(3deg); width: 60%; max-width: 300px; top: 60px; left: 40%;">
+                        <img src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/mutterkern/after-image_1775933581664.png" alt="Nachher: Entspannte Mama" class="w-full rounded-2xl shadow-lg object-cover aspect-[3/4]">
+                        <!-- "zu hier!" label -->
+                        <span class="absolute -bottom-8 left-0 z-[10] text-lg md:text-2xl italic" style="color: #856A47; font-family: 'Playfair Display', serif;">…zu hier!</span>
+                        <!-- Curved Arrow -->
+                        <svg class="absolute -bottom-3 left-16 z-[10]" width="40" height="30" viewBox="0 0 40 30" fill="none">
+                            <path d="M5 28 C15 30, 25 22, 28 5" stroke="#856A47" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            <path d="M24 10 L28 4 L32 9" stroke="#856A47" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Testimonial -->
+            <div class="w-full lg:w-[55%] text-center lg:text-left mt-16 lg:mt-0">
+                <h2 class="font-bold text-3xl md:text-4xl lg:text-5xl leading-tight mb-6" style="color: #864E41;">Ja, wirklich. So gut.</h2>
+
+                <!-- Star Rating -->
+                <div class="flex gap-1 mb-6 justify-center lg:justify-start">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="#856A47"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="#856A47"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="#856A47"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="#856A47"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="#856A47"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+
+                <p class="text-base md:text-lg leading-relaxed max-w-[520px] mx-auto lg:mx-0" style="color: #856A47;">
+                    „Ich war so skeptisch – noch ein Ratgeber, der unrealistische Tipps gibt. Aber MUTTERKERN hat mich total überrascht. Die 20-Minuten-Routine passt perfekt in meinen chaotischen Alltag mit zwei Kleinkindern. Nach nur einer Woche habe ich zum ersten Mal seit Monaten wieder durchgeschlafen. Mein Mann hat mich gefragt, was mit mir los ist – ich bin morgens tatsächlich nicht mehr gereizt. Das Beste: Es fühlt sich nicht wie eine weitere Aufgabe an, sondern wie ein Geschenk an mich selbst."
+                </p>
+                <p class="mt-4 font-bold text-base" style="color: #864E41;">— Julia T., Mama von 2 Kindern (2 und 4 Jahre)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 5: FAQ Accordion -->
+    <!-- ============================================ -->
+    <section class="bg-white py-10 px-5 md:px-8">
+        <div class="max-w-[900px] mx-auto py-6 md:py-10 px-4 md:px-5">
+            <!-- Heading -->
+            <h2 class="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-10 lg:mb-12" style="color: #864E41;">Alle deine Fragen beantwortet</h2>
+
+            <!-- Category Accordion -->
+            <div id="faq-accordion">
+                <!-- Category 1: Allgemeine Fragen (expanded by default) -->
+                <div class="faq-category" data-expanded="true">
+                    <div class="border-b" style="border-color: #E2D7C9;">
+                        <button class="category-toggle w-full flex justify-between items-center px-4 md:px-8 py-[18px] md:py-6 cursor-pointer text-left" aria-expanded="true">
+                            <span class="font-bold text-[17px] md:text-xl" style="color: #864E41;">Allgemeine Fragen</span>
+                            <span class="category-icon text-[22px]" style="color: #856A47;">−</span>
+                        </button>
+                        <div class="accordion-content" style="max-height: none; overflow: visible;">
+                            <div class="mx-4 md:mx-8 mb-4 rounded-xl px-4" style="background-color: #FFFFFF; border: 1px solid #E2D7C9;">
+                                <!-- Question 1 -->
+                                <div class="border-b" style="border-color: #E2D7C9;">
+                                    <button class="question-toggle w-full flex justify-between items-center px-2 py-[18px] cursor-pointer text-left" aria-expanded="false">
+                                        <span class="font-medium text-[15px] md:text-base" style="color: #856A47;">Was genau ist das MUTTERKERN Challenge Book?</span>
+                                        <span class="question-icon text-[20px] md:text-[22px] flex-shrink-0 ml-4" style="color: #856A47;">+</span>
+                                    </button>
+                                    <div class="nested-accordion-content" style="max-height: 0px;">
+                                        <p class="text-[14px] md:text-[15px] leading-relaxed pt-2 pb-4 px-2" style="color: #856A47;">MUTTERKERN ist ein 30-Tage Challenge Book (ca. 40 Seiten) mit einer geführten 20-Minuten-Abendroutine. Es enthält tägliche Aufgaben, Tracking-Seiten und Reflexionsfragen – speziell für Mamas, die abends endlich runterkommen wollen.</p>
+                                    </div>
+                                </div>
+                                <!-- Question 2 -->
+                                <div class="border-b" style="border-color: #E2D7C9;">
+                                    <button class="question-toggle w-full flex justify-between items-center px-2 py-[18px] cursor-pointer text-left" aria-expanded="false">
+                                        <span class="font-medium text-[15px] md:text-base" style="color: #856A47;">Wie bekomme ich das Challenge Book nach dem Kauf?</span>
+                                        <span class="question-icon text-[20px] md:text-[22px] flex-shrink-0 ml-4" style="color: #856A47;">+</span>
+                                    </button>
+                                    <div class="nested-accordion-content" style="max-height: 0px;">
+                                        <p class="text-[14px] md:text-[15px] leading-relaxed pt-2 pb-4 px-2" style="color: #856A47;">Nach dem Kauf erhältst du sofort eine E-Mail mit dem Download-Link. Du kannst das Book direkt auf deinem Handy, Tablet oder Computer lesen oder es dir ausdrucken – ganz wie du möchtest.</p>
+                                    </div>
+                                </div>
+                                <!-- Question 3 -->
+                                <div>
+                                    <button class="question-toggle w-full flex justify-between items-center px-2 py-[18px] cursor-pointer text-left" aria-expanded="false">
+                                        <span class="font-medium text-[15px] md:text-base" style="color: #856A47;">Brauche ich Vorkenntnisse oder besondere Materialien?</span>
+                                        <span class="question-icon text-[20px] md:text-[22px] flex-shrink-0 ml-4" style="color: #856A47;">+</span>
+                                    </button>
+                                    <div class="nested-accordion-content" style="max-height: 0px;">
+                                        <p class="text-[14px] md:text-[15px] leading-relaxed pt-2 pb-4 px-2" style="color: #856A47;">Nein, gar nichts! Du brauchst nur 20 Minuten am Abend und die Bereitschaft, etwas für dich zu tun. Alles wird Schritt für Schritt erklärt – einfach, klar und ohne Schnickschnack.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 2: Über die Challenge -->
+                <div class="faq-category">
+                    <div class="border-b" style="border-color: #E2D7C9;">
+                        <button class="category-toggle w-full flex justify-between items-center px-4 md:px-8 py-[18px] md:py-6 cursor-pointer text-left" aria-expanded="false">
+                            <span class="font-bold text-[17px] md:text-xl" style="color: #864E41;">Über die Challenge</span>
+                            <span class="category-icon text-[22px]" style="color: #856A47;">+</span>
+                        </button>
+                        <div class="accordion-content" style="max-height: 0px;">
+                            <div class="mx-4 md:mx-8 mb-4 rounded-xl px-4" style="background-color: #FFFFFF; border: 1px solid #E2D7C9;">
+                                <div class="border-b" style="border-color: #E2D7C9;">
+                                    <button class="question-toggle w-full flex justify-between items-center px-2 py-[18px] cursor-pointer text-left" aria-expanded="false">
+                                        <span class="font-medium text-[15px] md:text-base" style="color: #856A47;">Was passiert, wenn ich einen Tag verpasse?</span>
+                                        <span class="question-icon text-[20px] md:text-[22px] flex-shrink-0 ml-4" style="color: #856A47;">+</span>
+                                    </button>
+                                    <div class="nested-accordion-content" style="max-height: 0px;">
+                                        <p class="text-[14px] md:text-[15px] leading-relaxed pt-2 pb-4 px-2" style="color: #856A47;">Kein Stress! Das Challenge Book ist so aufgebaut, dass du einfach am nächsten Tag weitermachen kannst. Es gibt keinen Druck – Flexibilität ist Teil des Konzepts, weil wir wissen, dass kein Mama-Tag dem anderen gleicht.</p>
+                                    </div>
+                                </div>
+                                <div class="border-b" style="border-color: #E2D7C9;">
+                                    <button class="question-toggle w-full flex justify-between items-center px-2 py-[18px] cursor-pointer text-left" aria-expanded="false">
+                                        <span class="font-medium text-[15px] md:text-base" style="color: #856A47;">Funktioniert die Routine wirklich in nur 20 Minuten?</span>
+                                        <span class="question-icon text-[20px] md:text-[22px] flex-shrink-0 ml-4" style="color: #856A47;">+</span>
+                                    </button>
+                                    <div class="nested-accordion-content" style="max-height: 0px;">
+                                        <p class="text-[14px] md:text-[15px] leading-relaxed pt-2 pb-4 px-2" style="color: #856A47;">Ja, absolut! Jede Tagesaufgabe ist bewusst auf maximal 20 Minuten ausgelegt. An besonders stressigen Tagen gibt es auch eine verkürzte 10-Minuten-Variante. Du bestimmst das Tempo.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="question-toggle w-full flex justify-between items-center px-2 py-[18px] cursor-pointer text-left" aria-expanded="false">
+                                        <span class="font-medium text-[15px] md:text-base" style="color: #856A47;">Kann ich die Challenge auch wiederholen?</span>
+                                        <span class="question-icon text-[20px] md:text-[22px] flex-shrink-0 ml-4" style="color: #856A47;">+</span>
+                                    </button>
+                                    <div class="nested-accordion-content" style="max-height: 0px;">
+                                        <p class="text-[14px] md:text-[15px] leading-relaxed pt-2 pb-4 px-2" style="color: #856A47;">Natürlich! Viele Mamas drucken sich das Book einfach erneut aus und starten eine zweite Runde. Die Routinen vertiefen sich mit jeder Wiederholung und werden immer mehr zur Gewohnheit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 3: Ergebnisse & Wirkung -->
+                <div class="faq-category">
+                    <div class="border-b" style="border-color: #E2D7C9;">
+                        <button class="category-toggle w-full flex justify-between items-center px-4 md:px-8 py-[18px] md:py-6 cursor-pointer text-left" aria-expanded="false">
+                            <span class="font-bold text-[17px] md:text-xl" style="color: #864E41;">Ergebnisse & Wirkung</span>
+                            <span class="category-icon text-[22px]" style="color: #856A47;">+</span>
+                        </button>
+                        <div class="accordion-content" style="max-height: 0px;">
+                            <div class="mx-4 md:mx-8 mb-4 rounded-xl px-4" style="background-color: #FFFFFF; border: 1px solid #E2D7C9;">
+                                <div class="border-b" style="border-color: #E2D7C9;">
+                                    <button class="question-toggle w-full flex justify-between items-center px-2 py-[18px] cursor-pointer text-left" aria-expanded="false">
+                                        <span class="font-medium text-[15px] md:text-base" style="color: #856A47;">Wann merke ich erste Veränderungen?</span>
+                                        <span class="question-icon text-[20px] md:text-[22px] flex-shrink-0 ml-4" style="color: #856A47;">+</span>
+                                    </button>
+                                    <div class="nested-accordion-content" style="max-height: 0px;">
+                                        <p class="text-[14px] md:text-[15px] leading-relaxed pt-2 pb-4 px-2" style="color: #856A47;">Die meisten Mamas berichten von spürbaren Verbesserungen bereits in der ersten Woche – schnelleres Einschlafen, weniger Gedankenkarussell und ein ruhigeres Gefühl am Abend. Nach 30 Tagen hat sich bei den meisten eine stabile Gewohnheit gebildet.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="question-toggle w-full flex justify-between items-center px-2 py-[18px] cursor-pointer text-left" aria-expanded="false">
+                                        <span class="font-medium text-[15px] md:text-base" style="color: #856A47;">Hilft das auch bei extremer Erschöpfung?</span>
+                                        <span class="question-icon text-[20px] md:text-[22px] flex-shrink-0 ml-4" style="color: #856A47;">+</span>
+                                    </button>
+                                    <div class="nested-accordion-content" style="max-height: 0px;">
+                                        <p class="text-[14px] md:text-[15px] leading-relaxed pt-2 pb-4 px-2" style="color: #856A47;">Gerade dann! Das Challenge Book wurde speziell für erschöpfte Mamas entwickelt. Die Aufgaben sind so einfach gehalten, dass du sie auch an deinen schlimmsten Tagen schaffst. Es geht nicht um Perfektion, sondern um kleine, machbare Schritte.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 4: Zahlung & Zugang -->
+                <div class="faq-category">
+                    <div class="border-b" style="border-color: #E2D7C9;">
+                        <button class="category-toggle w-full flex justify-between items-center px-4 md:px-8 py-[18px] md:py-6 cursor-pointer text-left" aria-expanded="false">
+                            <span class="font-bold text-[17px] md:text-xl" style="color: #864E41;">Zahlung & Zugang</span>
+                            <span class="category-icon text-[22px]" style="color: #856A47;">+</span>
+                        </button>
+                        <div class="accordion-content" style="max-height: 0px;">
+                            <div class="mx-4 md:mx-8 mb-4 rounded-xl px-4" style="background-color: #FFFFFF; border: 1px solid #E2D7C9;">
+                                <div class="border-b" style="border-color: #E2D7C9;">
+                                    <button class="question-toggle w-full flex justify-between items-center px-2 py-[18px] cursor-pointer text-left" aria-expanded="false">
+                                        <span class="font-medium text-[15px] md:text-base" style="color: #856A47;">Welche Zahlungsarten werden akzeptiert?</span>
+                                        <span class="question-icon text-[20px] md:text-[22px] flex-shrink-0 ml-4" style="color: #856A47;">+</span>
+                                    </button>
+                                    <div class="nested-accordion-content" style="max-height: 0px;">
+                                        <p class="text-[14px] md:text-[15px] leading-relaxed pt-2 pb-4 px-2" style="color: #856A47;">Du kannst bequem per Kreditkarte, PayPal oder Sofortüberweisung bezahlen. Der Checkout ist SSL-verschlüsselt und komplett sicher.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="question-toggle w-full flex justify-between items-center px-2 py-[18px] cursor-pointer text-left" aria-expanded="false">
+                                        <span class="font-medium text-[15px] md:text-base" style="color: #856A47;">Kann ich das Book auf mehreren Geräten nutzen?</span>
+                                        <span class="question-icon text-[20px] md:text-[22px] flex-shrink-0 ml-4" style="color: #856A47;">+</span>
+                                    </button>
+                                    <div class="nested-accordion-content" style="max-height: 0px;">
+                                        <p class="text-[14px] md:text-[15px] leading-relaxed pt-2 pb-4 px-2" style="color: #856A47;">Ja! Du erhältst eine PDF-Datei, die du auf jedem Gerät öffnen, lesen und so oft ausdrucken kannst, wie du möchtest. Es gehört dir für immer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 5: Für wen ist es geeignet? -->
+                <div class="faq-category">
+                    <div class="border-b" style="border-color: #E2D7C9;">
+                        <button class="category-toggle w-full flex justify-between items-center px-4 md:px-8 py-[18px] md:py-6 cursor-pointer text-left" aria-expanded="false">
+                            <span class="font-bold text-[17px] md:text-xl" style="color: #864E41;">Für wen ist es geeignet?</span>
+                            <span class="category-icon text-[22px]" style="color: #856A47;">+</span>
+                        </button>
+                        <div class="accordion-content" style="max-height: 0px;">
+                            <div class="mx-4 md:mx-8 mb-4 rounded-xl px-4" style="background-color: #FFFFFF; border: 1px solid #E2D7C9;">
+                                <div class="border-b" style="border-color: #E2D7C9;">
+                                    <button class="question-toggle w-full flex justify-between items-center px-2 py-[18px] cursor-pointer text-left" aria-expanded="false">
+                                        <span class="font-medium text-[15px] md:text-base" style="color: #856A47;">Ist das Challenge Book nur für Mamas mit Kleinkindern?</span>
+                                        <span class="question-icon text-[20px] md:text-[22px] flex-shrink-0 ml-4" style="color: #856A47;">+</span>
+                                    </button>
+                                    <div class="nested-accordion-content" style="max-height: 0px;">
+                                        <p class="text-[14px] md:text-[15px] leading-relaxed pt-2 pb-4 px-2" style="color: #856A47;">Hauptsächlich ja – es wurde für Mamas mit Kindern zwischen 1 und 6 Jahren entwickelt. Aber auch Mamas mit älteren Kindern oder Schwangere profitieren von den Abendroutinen. Wenn du abends nicht runterkommst, ist es für dich.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="question-toggle w-full flex justify-between items-center px-2 py-[18px] cursor-pointer text-left" aria-expanded="false">
+                                        <span class="font-medium text-[15px] md:text-base" style="color: #856A47;">Was, wenn ich schon alles versucht habe?</span>
+                                        <span class="question-icon text-[20px] md:text-[22px] flex-shrink-0 ml-4" style="color: #856A47;">+</span>
+                                    </button>
+                                    <div class="nested-accordion-content" style="max-height: 0px;">
+                                        <p class="text-[14px] md:text-[15px] leading-relaxed pt-2 pb-4 px-2" style="color: #856A47;">Das hören wir oft! Der Unterschied bei MUTTERKERN: Es ist kein Ratgeber mit Tipps, die du eh schon kennst. Es ist eine Schritt-für-Schritt-Challenge, die dich 30 Tage lang an die Hand nimmt. Die Struktur und das Tracking machen den Unterschied.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    (function() {
+        // Category toggles
+        document.querySelectorAll('.category-toggle').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                const category = btn.closest('.faq-category');
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('.category-icon');
+                const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+                if (isExpanded) {
+                    // Close
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    content.offsetHeight; // force reflow
+                    content.style.overflow = 'hidden';
+                    content.style.maxHeight = '0px';
+                    btn.setAttribute('aria-expanded', 'false');
+                    icon.textContent = '+';
+                    category.setAttribute('data-expanded', 'false');
+                } else {
+                    // Open
+                    content.style.overflow = 'hidden';
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    btn.setAttribute('aria-expanded', 'true');
+                    icon.textContent = '−';
+                    category.setAttribute('data-expanded', 'true');
+
+                    content.addEventListener('transitionend', function handler() {
+                        if (btn.getAttribute('aria-expanded') === 'true') {
+                            content.style.maxHeight = 'none';
+                            content.style.overflow = 'visible';
+                        }
+                        content.removeEventListener('transitionend', handler);
+                    });
+                }
+            });
+        });
+
+        // Question toggles
+        document.querySelectorAll('.question-toggle').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('.question-icon');
+                const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+                if (isExpanded) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    content.offsetHeight;
+                    content.style.overflow = 'hidden';
+                    content.style.maxHeight = '0px';
+                    btn.setAttribute('aria-expanded', 'false');
+                    icon.textContent = '+';
+                } else {
+                    content.style.overflow = 'hidden';
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    btn.setAttribute('aria-expanded', 'true');
+                    icon.textContent = '−';
+
+                    content.addEventListener('transitionend', function handler() {
+                        if (btn.getAttribute('aria-expanded') === 'true') {
+                            content.style.maxHeight = 'none';
+                            content.style.overflow = 'visible';
+                        }
+                        content.removeEventListener('transitionend', handler);
+                    });
+
+                    // Recalculate parent category height
+                    const parentAccordion = btn.closest('.accordion-content');
+                    if (parentAccordion && parentAccordion.style.maxHeight !== 'none') {
+                        parentAccordion.style.maxHeight = 'none';
+                        parentAccordion.style.overflow = 'visible';
+                    }
+                }
+            });
+        });
+    })();
+    </script>
+
+    <!-- ============================================ -->
+    <!-- SECTION 6: Testimonials -->
+    <!-- ============================================ -->
+    <section class="py-10 md:py-16 px-5 md:px-10" style="background-color: #E2D7C9;">
+        <div class="max-w-[1200px] mx-auto">
+            <!-- Main Heading -->
+            <h2 class="text-center text-[28px] md:text-4xl lg:text-5xl font-bold uppercase mb-10" style="color: #864E41; font-family: 'Playfair Display', serif;">Was unsere Mamas sagen</h2>
+
+            <!-- Card Row -->
+            <div class="flex flex-col lg:flex-row flex-wrap justify-center items-stretch gap-5 lg:gap-8">
+                <!-- Card 1 -->
+                <div class="flex-1 min-w-[280px] max-w-[380px] mx-auto lg:mx-0 rounded-[20px] py-10 px-8 text-center flex flex-col h-full" style="background-color: #FAF8F0; border: 2px solid #864E41;">
+                    <p class="uppercase font-bold text-[22px] mb-2" style="color: #864E41;">LEBENSVERÄNDERND!</p>
+                    <div class="flex justify-center gap-1 mb-5">
+                        <span style="color: #864E41; font-size: 18px;">★</span>
+                        <span style="color: #864E41; font-size: 18px;">★</span>
+                        <span style="color: #864E41; font-size: 18px;">★</span>
+                        <span style="color: #864E41; font-size: 18px;">★</span>
+                        <span style="color: #864E41; font-size: 18px;">★</span>
+                    </div>
+                    <p class="italic text-[17px] leading-relaxed mb-6 flex-1" style="color: #856A47;">„Ich dachte, ich bin einfach so – immer müde, immer gereizt. Nach 2 Wochen mit MUTTERKERN habe ich gemerkt: Mein Körper brauchte einfach eine Routine zum Runterfahren. Jetzt freue ich mich abends sogar auf meine 20 Minuten!"</p>
+                    <p class="uppercase font-bold text-xl" style="color: #864E41;">LISA M.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flex-1 min-w-[280px] max-w-[380px] mx-auto lg:mx-0 rounded-[20px] py-10 px-8 text-center flex flex-col h-full" style="background-color: #FAF8F0; border: 2px solid #864E41;">
+                    <p class="uppercase font-bold text-[22px] mb-2" style="color: #864E41;">SO EINFACH!</p>
+                    <div class="flex justify-center gap-1 mb-5">
+                        <span style="color: #864E41; font-size: 18px;">★</span>
+                        <span style="color: #864E41; font-size: 18px;">★</span>
+                        <span style="color: #864E41; font-size: 18px;">★</span>
+                        <span style="color: #864E41; font-size: 18px;">★</span>
+                        <span style="color: #864E41; font-size: 18px;">★</span>
+                    </div>
+                    <p class="italic text-[17px] leading-relaxed mb-6 flex-1" style="color: #856A47;">„Endlich etwas, das nicht noch mehr Druck aufbaut! Die täglichen Aufgaben sind so kurz und machbar. Selbst an Tagen, wo alles drunter und drüber ging, habe ich es geschafft. Und mein Schlaf ist SO viel besser geworden."</p>
+                    <p class="uppercase font-bold text-xl" style="color: #864E41;">ANNA K.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flex-1 min-w-[280px] max-w-[380px] mx-auto lg:mx-0 rounded-[20px] py-10 px-8 text-center flex flex-col h-full" style="background-color: #FAF8F0; border: 2px solid #864E41;">
+                    <p class="uppercase font-bold text-[22px] mb-2" style="color: #864E41;">NOCHMAL BESTELLT!</p>
+                    <div class="flex justify-center gap-1 mb-5">
+                        <span style="color: #864E41; font-size: 18px;">★</span>
+                        <span style="color: #864E41; font-size: 18px;">★</span>
+                        <span style="color: #864E41; font-size: 18px;">★</span>
+                        <span style="color: #864E41; font-size: 18px;">★</span>
+                        <span style="color: #864E41; font-size: 18px;">★</span>
+                    </div>
+                    <p class="italic text-[17px] leading-relaxed mb-6 flex-1" style="color: #856A47;">„Ich habe das Challenge Book direkt nochmal für meine beste Freundin besorgt. Wir machen es jetzt zusammen und feuern uns gegenseitig an. Meine Kinder merken den Unterschied – Mama ist abends nicht mehr so genervt. Das allein ist es schon wert!"</p>
+                    <p class="uppercase font-bold text-xl" style="color: #864E41;">MARIA T.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
